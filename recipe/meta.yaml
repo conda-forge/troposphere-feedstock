@@ -1,5 +1,5 @@
 {% set name = "troposphere" %}
-{% set version = "2.5.2" %}
+{% set version = "2.5.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://github.com/cloudtools/{{ name }}/archive/{{ version }}.tar.gz"
-  sha256: "ecac74e3676eb5aa94ca1ea99db8c25f4dce9a23c1955d96cb5cdb2b65dbbb99"
+  sha256: "c517966be7a22649e1116d18d6d0cd222eca80dbf6fd82fed1d01fa5ee8bad09"
 
 build:
   #TODO: Make noarch when python2 is dropped
@@ -44,3 +44,5 @@ extra:
   recipe-maintainers:
     - agcopenhaver
     - adbeda
+    - rluria14
+    - oblute
