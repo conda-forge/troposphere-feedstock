@@ -1,5 +1,5 @@
 {% set name = "troposphere" %}
-{% set version = "2.5.3" %}
+{% set version = "2.6.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://github.com/cloudtools/{{ name }}/archive/{{ version }}.tar.gz"
-  sha256: "c517966be7a22649e1116d18d6d0cd222eca80dbf6fd82fed1d01fa5ee8bad09"
+  sha256: "8c7fc8886dd8d5d31b0cbc7646f8d1783a5d72973359ee21e037f6ce22fd60a5"
 
 build:
   #TODO: Make noarch when python2 is dropped
