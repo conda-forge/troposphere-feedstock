@@ -2,17 +2,17 @@
 {% set version = "2.6.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://github.com/cloudtools/{{ name }}/archive/{{ version }}.tar.gz"
-  sha256: "8c7fc8886dd8d5d31b0cbc7646f8d1783a5d72973359ee21e037f6ce22fd60a5"
+  url: https://github.com/cloudtools/{{ name }}/archive/{{ version }}.tar.gz
+  sha256: 8c7fc8886dd8d5d31b0cbc7646f8d1783a5d72973359ee21e037f6ce22fd60a5
 
 build:
-  #TODO: Make noarch when python2 is dropped
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  noarch: python
+  number: 2
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
@@ -32,13 +32,13 @@ test:
     - awacs >=0.8
 
 about:
-  home: "https://github.com/cloudtools/troposphere"
-  license: "BSD-2-Clause"
-  license_family: "BSD"
-  license_file: "LICENSE"
+  home: https://github.com/cloudtools/troposphere
+  license: BSD-2-Clause
+  license_family: BSD
+  license_file: LICENSE
   summary: "AWS CloudFormation creation library"
-  doc_url: "https://troposphere.readthedocs.io"
-  dev_url: "https://github.com/cloudtools/troposphere"
+  doc_url: https://troposphere.readthedocs.io
+  dev_url: https://github.com/cloudtools/troposphere
 
 extra:
   recipe-maintainers:
