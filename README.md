@@ -5,7 +5,7 @@ Home: https://github.com/cloudtools/troposphere
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: AWS CloudFormation creation library
 
