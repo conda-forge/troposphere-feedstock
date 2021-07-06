@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - cfn-flip >=1.0.2
     - awacs >=0.8
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -43,7 +43,5 @@ about:
 extra:
   recipe-maintainers:
     - mxr-conda
-    - agcopenhaver
-    - adbeda
     - rluria14
     - oblute
