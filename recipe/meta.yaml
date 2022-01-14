@@ -1,5 +1,5 @@
 {% set name = "troposphere" %}
-{% set version = "3.2.1" %}
+{% set version = "3.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cloudtools/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 7005ddb6f2782a0c5e3c230104088175bc8f28b83d492227f006528c9848d64a
+  sha256: a4ff6600ca8ba546676e43d74f5c6f89e6ec83833117539d95a6a48eab7519ca
 
 build:
   noarch: python
